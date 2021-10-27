@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/8ff77b02-86c3-4a55-a9d6-5a3fd092615a/resourceGroups/AI-Starter-Development/providers/Microsoft.Web/sites/dxcaistarterdevelopment",
+    "appService.deploySubpath": "."
+}
