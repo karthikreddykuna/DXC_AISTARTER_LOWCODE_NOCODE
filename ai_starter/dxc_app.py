@@ -7,7 +7,7 @@ import sys
 import os
 from flask_jsonpify import jsonpify
 import pandas as pd
-from dxc import ai
+#from dxc import ai
 
 
 #-------- ROUTES GO HERE -----------#
@@ -28,13 +28,13 @@ def Search():
     if (loc == "remote"):
         if (typ== "csv"):
             #print(1)
-            df=ai.read_data_frame_from_remote_csv(url)
-            #df = pd.read_csv(url)
+            #df=ai.read_data_frame_from_remote_csv(url)
+            df = pd.read_csv(url)
             JSONP_data = df.to_json()
         elif (typ== "json"):
             print('json input')
-            df=ai.read_data_frame_from_remote_json(url)
-            #df = pd.read_json(url)
+            #df=ai.read_data_frame_from_remote_json(url)
+            df = pd.read_json(url)
             JSONP_data = df.to_json()
 
     # elif (loc== "local"):
