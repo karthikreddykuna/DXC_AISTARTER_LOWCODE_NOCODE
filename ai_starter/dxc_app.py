@@ -29,7 +29,7 @@ def Search():
         if (typ== "csv"):
             #print(1)
             df=ai.read_data_frame_from_remote_csv(url)
-            df = pd.read_csv(url)
+            #df = pd.read_csv(url)
             JSONP_data = df.to_json()
         elif (typ== "json"):
             print('json input')
