@@ -2,4 +2,3 @@ flask
 flask_jsonpify
 pandas
 DXC-Industrialized-AI-Starter==3.1.1
-tkinter
