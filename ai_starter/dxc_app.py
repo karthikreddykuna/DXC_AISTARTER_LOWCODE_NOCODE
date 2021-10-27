@@ -5,7 +5,6 @@ from io import StringIO
 import json
 import sys
 import os
-from flask_jsonpify import jsonpify
 import pandas as pd
 from dxc import ai
 
