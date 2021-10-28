@@ -1,4 +1,4 @@
 flask
-flask_jsonpify
 pandas
+flatten-json
 #DXC-Industrialized-AI-Starter==3.1.1
