@@ -27,6 +27,10 @@ def Search():
         elif (typ== "json"):
             df= readdata.read_data_frame_from_remote_json(url)
             JSONP_data = df.to_json()
+    if (loc == "local"):
+        if (typ== "csv"):
+            df = readdata.read_data_frame_from_local_csv(url)
+            JSONP_data = df.to_json()
     
     return JSONP_data
 

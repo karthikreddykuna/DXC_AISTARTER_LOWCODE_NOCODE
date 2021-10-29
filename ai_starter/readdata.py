@@ -29,3 +29,8 @@ def read_data_frame_from_remote_csv(csv_url, col_names = [], names=None, sep=','
         df.columns = col_names
     return(df)
 
+def read_data_frame_from_local_csv(csv_path, col_names = [], sep=',', delim_whitespace=False, header = 'infer', names = None, skiprows=None, error_bad_lines=True, encoding=None):
+    df = pd.read_csv(csv_path, delim_whitespace=delim_whitespace, header = header)
+    if col_names != []:
+        df.columns = col_names
+    return(df)
