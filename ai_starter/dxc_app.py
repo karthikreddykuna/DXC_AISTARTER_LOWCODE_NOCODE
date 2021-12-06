@@ -32,5 +32,5 @@ def Search():
             df = readdata.read_data_frame_from_local_csv(url)
             JSONP_data = df.to_json()
     
-    return JSONP_data
+    return JSONP_data 
 
